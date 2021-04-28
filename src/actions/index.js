@@ -8,6 +8,13 @@ export function loadGamesSuccess(games) {
   };
 }
 
+export function loadScreenshotsSuccess(images) {
+  return {
+    type: types.LOAD_IMAGES_SUCCESS,
+    payload: images,
+  };
+}
+
 export function loadGames() {
   return function (dispatch) {
     return gamesAPi
@@ -18,5 +25,13 @@ export function loadGames() {
       .catch((error) => {
         throw error;
       });
+  };
+}
+
+export function loadScreenshots() {
+  return function (dispatch) {
+    return gamesAPi.getGamesImages().then((images) => {
+      dispatch(loadScreenshotsSuccess(images));
+    });
   };
 }
