@@ -1,15 +1,15 @@
 import * as types from './actionTypes';
 import * as gamesAPi from '../API/Api';
 
-export const loadGamesSuccess = (games) => {
+export function loadGamesSuccess(games) {
   return {
     type: types.LOAD_GAMES_SUCCESS,
     payload: games,
   };
-};
+}
 
-export const loadGames = () => {
-  return (dispatch) => {
+export function loadGames() {
+  return function (dispatch) {
     return gamesAPi
       .getGames()
       .then((games) => {
@@ -19,4 +19,4 @@ export const loadGames = () => {
         throw error;
       });
   };
-};
+}
