@@ -1,0 +1,1 @@
+export const LOAD_GAMES_SUCCESS = 'LOAD_GAMES_SUCCESS'
