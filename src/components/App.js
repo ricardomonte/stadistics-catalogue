@@ -1,10 +1,14 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import GameList from '../container/GameList';
+import GameOnly from '../container/GameOnly';
 
 const App = () => (
   <div>
-    <Route exact path="/" component={GameList} />
+    <Switch>
+      <Route exact path="/" component={GameList} />
+      <Route path="/game/:slug" component={GameOnly} />
+    </Switch>
   </div>
 );
 
