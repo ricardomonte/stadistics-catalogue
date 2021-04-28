@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 
 const Games = ({ game }) => (
   <div>
-    <img alt="something" />
+    <img alt="something" src={`https:${game.cover}`} />
     <div>
-      <h4>{game.title}</h4>
-      <p>some text</p>
+      <h4>{game.name}</h4>
+      <p>{game.summary}</p>
       <p />
     </div>
   </div>
 );
 
-Games.protoTypes = {
+Games.propTypes = {
   game: PropTypes.instanceOf(Object).isRequired,
 };
 
