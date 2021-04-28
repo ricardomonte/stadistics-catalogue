@@ -15,27 +15,23 @@ const GameList = ({ games, loadedGames }) => {
     <div>
       <h1>List of games</h1>
       {games.map((game) => (
-        <Games key={game.title} game={game} />
+        <Games key={game.name} game={game} />
       ))}
     </div>
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    games: state.game,
-  };
-};
+const mapStateToProps = (state) => ({
+  games: state.game,
+});
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    loadedGames: () => dispatch(loadGames()),
-  };
-};
+const mapDispatchToProps = (dispatch) => ({
+  loadedGames: () => dispatch(loadGames()),
+});
 
-GameList.protoTypes = {
+GameList.propTypes = {
   games: PropTypes.instanceOf(Array).isRequired,
-  loadGames: PropTypes.func.isRequired,
+  loadedGames: PropTypes.func.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(GameList);
