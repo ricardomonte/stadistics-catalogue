@@ -14,18 +14,18 @@ export const getGamesImages = async () => {
   const urlGame = 'http://localhost:5000/games/images';
   try {
     const res = await axios.get(urlGame);
-    return res.data
+    return res.data;
   } catch (error) {
-    console.log(error);
+    return error;
   }
 };
 
 export const getGamesPlatforms = async () => {
   const urlGame = 'http://localhost:5000/games/platforms';
   try {
-    const res = await axios.get(urlGame)
-    return res.data
-  } catch (error){
-    console.log(error)
+    const res = await axios.get(urlGame);
+    return res.data;
+  } catch (error) {
+    return error;
   }
-}
+};
