@@ -15,6 +15,13 @@ export function loadScreenshotsSuccess(images) {
   };
 }
 
+export function filterGame(filter) {
+  return {
+    type: types.FILTER_GAME,
+    payload: filter,
+  };
+}
+
 export function loadGames() {
   return function (dispatch) {
     return gamesAPi
