@@ -7,7 +7,7 @@ const App = () => (
   <div>
     <Switch>
       <Route exact path="/" component={GameList} />
-      <Route path="/game/:slug" component={GameOnly} />
+      <Route path="/game/:id" component={GameOnly} />
     </Switch>
   </div>
 );

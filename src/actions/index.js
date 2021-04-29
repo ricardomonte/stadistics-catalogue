@@ -28,9 +28,9 @@ export function loadGames() {
   };
 }
 
-export function loadScreenshots() {
+export function loadScreenshots(id) {
   return function (dispatch) {
-    return gamesAPi.getGamesImages().then((images) => {
+    return gamesAPi.getGamesImages(id).then((images) => {
       dispatch(loadScreenshotsSuccess(images));
     });
   };

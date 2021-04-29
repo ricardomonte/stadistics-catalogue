@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import game from './game';
-import images from './game';
+import image from './images';
 
 const rootReducer = combineReducers({
   game,
-  images,
+  image,
 });
 
 export default rootReducer;

@@ -10,21 +10,11 @@ export const getGames = async () => {
   }
 };
 
-export const getGamesImages = async () => {
-  const urlGame = 'http://localhost:5000/games/images';
+export const getGamesImages = async (id) => {
+  const urlGame = `http://localhost:5000/games/${id}`;
   try {
     const res = await axios.get(urlGame);
-    return res.data;
-  } catch (error) {
-    return error;
-  }
-};
-
-export const getGamesPlatforms = async () => {
-  const urlGame = 'http://localhost:5000/games/platforms';
-  try {
-    const res = await axios.get(urlGame);
-    return res.data;
+    return await res.data[0];
   } catch (error) {
     return error;
   }
