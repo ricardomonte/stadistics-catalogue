@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import GameStyle from '../styles/Filter.module.css';
 
 const GenreFilter = ({ filter, onGameChange }) => {
   const genresArray = [
@@ -17,9 +18,15 @@ const GenreFilter = ({ filter, onGameChange }) => {
   ];
 
   return (
-    <div>
-      <p>Filter:</p>
-      <select id="genres" name="genres" value={filter} onChange={onGameChange}>
+    <div className={GameStyle.filter}>
+      <p className={GameStyle.filterText}>Filter:</p>
+      <select
+        id="genres"
+        name="genres"
+        value={filter}
+        onChange={onGameChange}
+        className={GameStyle.selection}
+      >
         <option value="" disabled>
           Genres...
         </option>
@@ -35,6 +42,6 @@ const GenreFilter = ({ filter, onGameChange }) => {
 
 GenreFilter.propTypes = {
   filter: PropTypes.string.isRequired,
-  onGameChange: PropTypes.string.isRequired,
+  onGameChange: PropTypes.func.isRequired,
 };
 export default GenreFilter;
