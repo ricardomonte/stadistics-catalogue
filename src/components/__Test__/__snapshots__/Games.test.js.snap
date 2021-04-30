@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Conten from Home matches snapshot 1`] = `
+<div>
+  <div
+    class="game"
+  >
+    <a
+      class="gameLink"
+      href="/game/1"
+    >
+      <img
+        alt="something"
+        class="gameImage"
+        src="https://mock.data.com/test.jpg"
+      />
+      <div
+        class="gameContainer"
+      >
+        <h3
+          class="gameTitle"
+        >
+          test data 1
+        </h3>
+      </div>
+    </a>
+  </div>
+</div>
+`;

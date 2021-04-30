@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content from GenreFilter matches snapshot 1`] = `
+<div>
+  <div
+    class="filter"
+  >
+    <p
+      class="filterText"
+    >
+      Filter:
+    </p>
+    <select
+      class="selection"
+      id="genres"
+      name="genres"
+    >
+      <option
+        disabled=""
+        value=""
+      >
+        Genres...
+      </option>
+      <option
+        value="ALL"
+      >
+        ALL
+      </option>
+      <option
+        value="Racing"
+      >
+        Racing
+      </option>
+      <option
+        value="Fighting"
+      >
+        Fighting
+      </option>
+      <option
+        value="Shooter"
+      >
+        Shooter
+      </option>
+      <option
+        value="Puzzle"
+      >
+        Puzzle
+      </option>
+      <option
+        value="Role-playing (RPG)"
+      >
+        Role-playing (RPG)
+      </option>
+      <option
+        value="Simulator"
+      >
+        Simulator
+      </option>
+      <option
+        value="Platform"
+      >
+        Platform
+      </option>
+      <option
+        value="Adventure"
+      >
+        Adventure
+      </option>
+      <option
+        value="Quiz/Trivia"
+      >
+        Quiz/Trivia
+      </option>
+      <option
+        value="Sport"
+      >
+        Sport
+      </option>
+    </select>
+  </div>
+</div>
+`;
