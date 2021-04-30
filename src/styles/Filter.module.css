@@ -1,0 +1,23 @@
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: 20px;
+  font-size: 2em;
+}
+
+.filterText {
+  color: rgb(141, 0, 129);
+  margin: 0;
+}
+
+.selection {
+  height: calc(1.5em + 0.5rem + 2px);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}

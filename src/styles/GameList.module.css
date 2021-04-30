@@ -1,0 +1,30 @@
+.gameBack {
+  margin-top: 7em;
+}
+
+.gameContainer {
+  margin: auto;
+  width: 95%;
+}
+
+.gameList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 20px;
+  justify-content: center;
+  padding: 3em 0;
+  border: 1px solid lightgray;
+  border-radius: 1.8em;
+  backdrop-filter: blur(5px);
+}
+
+.gameTitle {
+  width: max-content;
+  margin: 1.2em 0;
+  font-size: 3em;
+  font-weight: bold;
+  display: flex;
+  color: rgb(141, 0, 129);
+}
