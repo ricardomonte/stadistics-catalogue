@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Conten from Home matches snapshot 1`] = `
+<div>
+  <div
+    class="about"
+  />
+  <div
+    class="aboutText"
+  >
+    <h1
+      class="title"
+    >
+      About
+    </h1>
+    <p
+      class="aboutInfo"
+    >
+      FGPG comes from From Gamers To Gamers we look
+      <br />
+      We look for the top games on the market, and we give you the details of them.
+      <br />
+      We dream that everyone can know the games that everyone talks about.
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,449 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Conten from Home matches snapshot 1`] = `
+<div>
+  <div
+    class="ant-carousel"
+  >
+    <div
+      class="slick-slider carrouselStyle slick-initialized"
+      dir="ltr"
+    >
+      <div
+        class="slick-list"
+      >
+        <div
+          class="slick-track"
+          style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+        >
+          <div
+            aria-hidden="true"
+            class="slick-slide slick-cloned"
+            data-index="-1"
+            style="width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                id="helo"
+                style="width: 100%; display: inline-block;"
+                tabindex="-1"
+              >
+                <img
+                  alt="hero"
+                  class="heroeImage"
+                  src="https://mock.data.com/test5.jpg"
+                />
+                <div
+                  class="containerText"
+                >
+                  <h1
+                    class="heroeTitle"
+                  >
+                    test data 5
+                  </h1>
+                  <h2
+                    class="heroeRating"
+                  >
+                    100 %
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="false"
+            class="slick-slide slick-active slick-current"
+            data-index="0"
+            style="outline: none; width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                id="helo"
+                style="width: 100%; display: inline-block;"
+                tabindex="-1"
+              >
+                <img
+                  alt="hero"
+                  class="heroeImage"
+                  src="https://mock.data.com/test.jpg"
+                />
+                <div
+                  class="containerText"
+                >
+                  <h1
+                    class="heroeTitle"
+                  >
+                    test data 1
+                  </h1>
+                  <h2
+                    class="heroeRating"
+                  >
+                    72 %
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="slick-slide"
+            data-index="1"
+            style="outline: none; width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                id="helo"
+                style="width: 100%; display: inline-block;"
+                tabindex="-1"
+              >
+                <img
+                  alt="hero"
+                  class="heroeImage"
+                  src="https://mock.data.com/test2.jpg"
+                />
+                <div
+                  class="containerText"
+                >
+                  <h1
+                    class="heroeTitle"
+                  >
+                    test data 2
+                  </h1>
+                  <h2
+                    class="heroeRating"
+                  >
+                    80 %
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="slick-slide"
+            data-index="2"
+            style="outline: none; width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                id="helo"
+                style="width: 100%; display: inline-block;"
+                tabindex="-1"
+              >
+                <img
+                  alt="hero"
+                  class="heroeImage"
+                  src="https://mock.data.com/test3.jpg"
+                />
+                <div
+                  class="containerText"
+                >
+                  <h1
+                    class="heroeTitle"
+                  >
+                    test data 3
+                  </h1>
+                  <h2
+                    class="heroeRating"
+                  >
+                    10 %
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="slick-slide"
+            data-index="3"
+            style="outline: none; width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                id="helo"
+                style="width: 100%; display: inline-block;"
+                tabindex="-1"
+              >
+                <img
+                  alt="hero"
+                  class="heroeImage"
+                  src="https://mock.data.com/test4.jpg"
+                />
+                <div
+                  class="containerText"
+                >
+                  <h1
+                    class="heroeTitle"
+                  >
+                    test data 4
+                  </h1>
+                  <h2
+                    class="heroeRating"
+                  >
+                    95 %
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="slick-slide"
+            data-index="4"
+            style="outline: none; width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                id="helo"
+                style="width: 100%; display: inline-block;"
+                tabindex="-1"
+              >
+                <img
+                  alt="hero"
+                  class="heroeImage"
+                  src="https://mock.data.com/test5.jpg"
+                />
+                <div
+                  class="containerText"
+                >
+                  <h1
+                    class="heroeTitle"
+                  >
+                    test data 5
+                  </h1>
+                  <h2
+                    class="heroeRating"
+                  >
+                    100 %
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="slick-slide slick-cloned"
+            data-index="5"
+            style="width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                id="helo"
+                style="width: 100%; display: inline-block;"
+                tabindex="-1"
+              >
+                <img
+                  alt="hero"
+                  class="heroeImage"
+                  src="https://mock.data.com/test.jpg"
+                />
+                <div
+                  class="containerText"
+                >
+                  <h1
+                    class="heroeTitle"
+                  >
+                    test data 1
+                  </h1>
+                  <h2
+                    class="heroeRating"
+                  >
+                    72 %
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="slick-slide slick-cloned"
+            data-index="6"
+            style="width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                id="helo"
+                style="width: 100%; display: inline-block;"
+                tabindex="-1"
+              >
+                <img
+                  alt="hero"
+                  class="heroeImage"
+                  src="https://mock.data.com/test2.jpg"
+                />
+                <div
+                  class="containerText"
+                >
+                  <h1
+                    class="heroeTitle"
+                  >
+                    test data 2
+                  </h1>
+                  <h2
+                    class="heroeRating"
+                  >
+                    80 %
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="slick-slide slick-cloned"
+            data-index="7"
+            style="width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                id="helo"
+                style="width: 100%; display: inline-block;"
+                tabindex="-1"
+              >
+                <img
+                  alt="hero"
+                  class="heroeImage"
+                  src="https://mock.data.com/test3.jpg"
+                />
+                <div
+                  class="containerText"
+                >
+                  <h1
+                    class="heroeTitle"
+                  >
+                    test data 3
+                  </h1>
+                  <h2
+                    class="heroeRating"
+                  >
+                    10 %
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="slick-slide slick-cloned"
+            data-index="8"
+            style="width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                id="helo"
+                style="width: 100%; display: inline-block;"
+                tabindex="-1"
+              >
+                <img
+                  alt="hero"
+                  class="heroeImage"
+                  src="https://mock.data.com/test4.jpg"
+                />
+                <div
+                  class="containerText"
+                >
+                  <h1
+                    class="heroeTitle"
+                  >
+                    test data 4
+                  </h1>
+                  <h2
+                    class="heroeRating"
+                  >
+                    95 %
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            class="slick-slide slick-cloned"
+            data-index="9"
+            style="width: 0px;"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                id="helo"
+                style="width: 100%; display: inline-block;"
+                tabindex="-1"
+              >
+                <img
+                  alt="hero"
+                  class="heroeImage"
+                  src="https://mock.data.com/test5.jpg"
+                />
+                <div
+                  class="containerText"
+                >
+                  <h1
+                    class="heroeTitle"
+                  >
+                    test data 5
+                  </h1>
+                  <h2
+                    class="heroeRating"
+                  >
+                    100 %
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul
+        class="slick-dots slick-dots-bottom"
+        style="display: block;"
+      >
+        <li
+          class="slick-active"
+        >
+          <button>
+            1
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            2
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            3
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            4
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            5
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

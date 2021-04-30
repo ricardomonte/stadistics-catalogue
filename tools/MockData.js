@@ -25,7 +25,7 @@ const MockData = [
     name: 'test data 4',
     cover: '//mock.data.com/test4.jpg',
     genre: 'Fighting',
-    rating: 90,
+    rating: 95.67,
   },
   {
     id: 5,
