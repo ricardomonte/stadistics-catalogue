@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const getGames = async () => {
-  const url = 'https://mybaseapi.xyz/games';
+  const url = 'https://www.mybaseapi.xyz/games/';
   try {
     const res = await axios.get(url);
     return res.data;
@@ -11,7 +11,7 @@ export const getGames = async () => {
 };
 
 export const getGamesImages = async (id) => {
-  const urlGame = `https://mybaseapi.xyz/games/${id}`;
+  const urlGame = `https://www.mybaseapi.xyz/games/${id}`;
   try {
     const res = await axios.get(urlGame);
     return await res.data[0];

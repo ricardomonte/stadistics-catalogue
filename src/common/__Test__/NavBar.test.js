@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import NavBar from '../NavBar';
 
-test('Conten from Home matches snapshot', () => {
+test('Content from NavBar matches snapshot', () => {
   const content = render(
     <BrowserRouter>
       <NavBar />

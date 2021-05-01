@@ -1,7 +1,7 @@
 import imagesReducer from '../images';
 import * as actions from '../../actions/index';
 
-test('should replace games', () => {
+test('imagesReducer will update state and return it', () => {
   const firstState = [
     {
       name: 'a',

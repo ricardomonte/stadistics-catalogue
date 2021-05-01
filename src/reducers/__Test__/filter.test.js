@@ -1,7 +1,7 @@
 import filterReducer from '../filter';
 import * as actions from '../../actions/index';
 
-test('should replace games', () => {
+test('filterReducer will update state and return it', () => {
   const firstState = 'a';
   const newGame = 'b';
   const action = actions.filterGame(newGame);

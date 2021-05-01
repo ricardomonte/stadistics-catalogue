@@ -12,7 +12,7 @@ const GameList = ({
 }) => {
   useEffect(() => {
     loadedGames().catch((error) => {
-      alert(`loading games failed ${error}`);
+      alert(`Loading games failed ${error}`);
     });
   }, []);
   const handleFilterChange = (event) => {

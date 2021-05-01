@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 import MockData from '../../../tools/MockData';
 import Heroe from '../Heroe';
 
-test('Conten from Home matches snapshot', () => {
+test('Content from Heroe component matches snapshot', () => {
   const content = render(<Heroe image={MockData} />);
   expect(content.container).toMatchSnapshot();
 });

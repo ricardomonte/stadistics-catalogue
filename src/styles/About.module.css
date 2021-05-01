@@ -9,7 +9,7 @@
 .aboutText {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  color: #ffffff;
+  color: #fff;
   border: 2px solid #f1f1f1;
   position: absolute;
   top: 50%;
@@ -23,7 +23,7 @@
 
 .title {
   font-size: 3.5em;
-  color: #ffffff;
+  color: #fff;
 }
 
 .aboutInfo {

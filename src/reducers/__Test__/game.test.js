@@ -1,7 +1,7 @@
 import gameReducer from '../game';
 import * as actions from '../../actions/index';
 
-test('should replace games', () => {
+test('gameReducer will update state and return it', () => {
   const firstState = [
     {
       game: 'a',
