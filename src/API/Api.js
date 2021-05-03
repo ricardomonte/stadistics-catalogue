@@ -6,7 +6,7 @@ export const getGames = async () => {
     const res = await axios.get(url);
     return res.data;
   } catch (error) {
-    return error;
+    throw new Error(`${error.message}`);
   }
 };
 
@@ -16,6 +16,6 @@ export const getGamesImages = async (id) => {
     const res = await axios.get(urlGame);
     return await res.data[0];
   } catch (error) {
-    return error;
+    throw new Error(`${error.message}`);
   }
 };
