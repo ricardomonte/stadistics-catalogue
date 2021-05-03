@@ -8,10 +8,24 @@ export function loadGamesSuccess(games) {
   };
 }
 
+export function loadGamesError(error) {
+  return {
+    type: types.LOAD_GAMES_ERROR,
+    payload: error,
+  };
+}
+
 export function loadScreenshotsSuccess(images) {
   return {
     type: types.LOAD_IMAGES_SUCCESS,
     payload: images,
+  };
+}
+
+export function loadScreenshotsError(error) {
+  return {
+    type: types.LOAD_IMAGES_ERROR,
+    payload: error,
   };
 }
 
@@ -30,15 +44,20 @@ export function loadGames() {
         dispatch(loadGamesSuccess(games));
       })
       .catch((error) => {
-        throw error;
+        dispatch(loadGamesError(error.message));
       });
   };
 }
 
 export function loadScreenshots(id) {
   return function (dispatch) {
-    return gamesAPi.getGamesImages(id).then((images) => {
-      dispatch(loadScreenshotsSuccess(images));
-    });
+    return gamesAPi
+      .getGamesImages(id)
+      .then((images) => {
+        dispatch(loadScreenshotsSuccess(images));
+      })
+      .catch((error) => {
+        dispatch(loadScreenshotsError(error.message));
+      });
   };
 }
