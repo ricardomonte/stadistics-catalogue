@@ -88,6 +88,12 @@ _If, for any reason, the application crashes due to server side problems follow 
     npm install
 ```
 
+- Install globally nodemon
+
+```
+    npm install -g nodemon
+```
+
 - Open the project with your favourite editor.
 - Create .env file in the root
 - Add your credentials
@@ -104,7 +110,7 @@ _If, for any reason, the application crashes due to server side problems follow 
 - Then lunch the server.
 
 ```
-    npm start
+    nodemon start
 ```
 
 - Finally lunch once again the App
