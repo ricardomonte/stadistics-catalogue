@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Conten from Home matches snapshot 1`] = `
+exports[`Content from NavBar matches snapshot 1`] = `
 <div>
   <header
     class="containerHeader"

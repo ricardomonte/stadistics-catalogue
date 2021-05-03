@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Conten from Home matches snapshot 1`] = `
+exports[`Content from Games component matches snapshot 1`] = `
 <div>
   <div
     class="game"
