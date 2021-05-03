@@ -4,16 +4,19 @@ import PropTypes from 'prop-types';
 import Games from '../components/Games';
 import Heroe from '../common/Heroe';
 import GenreFilter from '../components/GenreFilter';
+import ErrorServer from '../components/ErrorServer';
 import { loadGames, filterGame } from '../actions';
 import GameStyle from '../styles/GameList.module.css';
 
 const GameList = ({
-  games, loadedGames, filteredGames, filteredGame,
+  errors,
+  games,
+  loadedGames,
+  filteredGames,
+  filteredGame,
 }) => {
   useEffect(() => {
-    loadedGames().catch((error) => {
-      alert(`Loading games failed ${error}`);
-    });
+    loadedGames();
   }, []);
   const handleFilterChange = (event) => {
     filteredGames(event.target.value);
@@ -22,8 +25,11 @@ const GameList = ({
 
   const oneGenreGames = () => games.filter((game) => game.genre === filteredGame.filter);
   const filterByGenre = filteredGame.filter !== '' ? oneGenreGames() : games;
-  const topGames = () => games.filter((game) => game.rating > 97);
+  const topGames = () => (errors ? games.filter((game) => game.rating > 97) : []);
   const arrayTop = topGames();
+  if (errors.errorLoad && games.length === 0) {
+    return <ErrorServer name={errors.errorLoad} />;
+  }
   return (
     <>
       <Heroe image={arrayTop} />
@@ -52,6 +58,7 @@ const GameList = ({
 const mapStateToProps = (state) => ({
   games: state.game,
   filteredGame: state.filter,
+  errors: state.manageErr,
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -60,6 +67,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 GameList.propTypes = {
+  errors: PropTypes.instanceOf(Object).isRequired,
   games: PropTypes.instanceOf(Array).isRequired,
   loadedGames: PropTypes.func.isRequired,
   filteredGames: PropTypes.func.isRequired,

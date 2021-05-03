@@ -3,20 +3,23 @@ import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { loadScreenshots } from '../actions';
+import ErrorServer from '../components/ErrorServer';
 import GameStyle from '../styles/OneGame.module.css';
 
-const GameOnly = ({ match, loadedOneGame, images }) => {
+const GameOnly = ({
+  errors, match, loadedOneGame, images,
+}) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    loadedOneGame(match.params.id).catch((error) => {
-      alert(`loading games failed ${error}`);
-    });
+    loadedOneGame(match.params.id);
   }, []);
   const history = useHistory();
   const goBack = () => {
     history.push('/');
   };
-
+  if (errors.errorImage) {
+    return <ErrorServer name={errors.errorImage} />;
+  }
   return (
     <div className={GameStyle.gameTotal}>
       <img
@@ -92,6 +95,7 @@ const GameOnly = ({ match, loadedOneGame, images }) => {
 };
 
 const mapStateToProps = (state) => ({
+  errors: state.manageErr,
   images: state.image,
 });
 
@@ -100,6 +104,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 GameOnly.propTypes = {
+  errors: PropTypes.instanceOf(Object).isRequired,
   match: PropTypes.instanceOf(Object).isRequired,
   loadedOneGame: PropTypes.func.isRequired,
   images: PropTypes.instanceOf(Object).isRequired,
