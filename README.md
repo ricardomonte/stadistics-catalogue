@@ -73,7 +73,7 @@ _If, for any reason, the application crashes due to server side problems follow 
 - Now open a new terminal in a folder where you want clone the following project then paste.
 
 ```
-    git@github.com:ricardomonte/express-proxy-igdb.git
+    git clone https://github.com/ricardomonte/express-proxy-igdb.git
 ```
 
 - Access the folder cloned.
