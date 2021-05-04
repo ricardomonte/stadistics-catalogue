@@ -1,0 +1,32 @@
+.carrouselStyle {
+  width: 100%;
+  height: 800px;
+  background-color: rgb(146, 0, 134);
+}
+
+.heroeImage {
+  width: 100%;
+  object-fit: cover;
+  height: 800px;
+  opacity: 0.4;
+}
+
+.containerText {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.heroeTitle,
+.heroeRating {
+  text-shadow: 4px 0 3px rgba(0, 0, 0, 0.7);
+  font-size: 4em;
+  color: #eee;
+  font-weight: 700;
+  padding-left: 2em;
+}

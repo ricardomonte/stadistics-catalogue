@@ -1,0 +1,17 @@
+.containerError {
+  padding-top: 3em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.error {
+  font-size: 5em;
+}
+
+.image {
+  width: 443px;
+  height: 443px;
+}

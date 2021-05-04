@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content from NavBar matches snapshot 1`] = `
+<div>
+  <header
+    class="containerHeader"
+  >
+    <div
+      class="containerLogo"
+    >
+      <a
+        class="logo"
+        href="/"
+      >
+        fgtg
+      </a>
+    </div>
+    <nav
+      class="contNav"
+    >
+      <a
+        aria-current="page"
+        class="linkHoAb active"
+        href="/"
+        style="color: rgb(74, 221, 235);"
+      >
+        Home
+      </a>
+       | 
+      <a
+        class="linkHoAb"
+        href="/about"
+      >
+        About
+      </a>
+    </nav>
+  </header>
+</div>
+`;
